@@ -23,10 +23,12 @@ pub mod short_id;
 pub mod blind;
 pub mod network;
 mod seals;
+mod dbc;
 
 pub use scripts::*;
 pub use short_id::*;
 pub use seals::*;
+pub use dbc::*;
 pub use network::Network;
 
 hash_newtype!(HashLock, sha256d::Hash, 32, doc="Hashed locks in HTLC");
