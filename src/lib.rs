@@ -77,6 +77,7 @@ pub extern crate secp256k1zkp;
 #[cfg(feature = "serde")]
 extern crate serde_crate as serde;
 
+#[macro_use]
 mod paradigms;
 #[macro_use]
 mod common;
