@@ -34,7 +34,7 @@ use std::io::{Read, Write};
 #[cfg(not(feature = "tokio"))]
 use std::net::TcpStream;
 
-use lightning::secp256k1;
+use bitcoin::secp256k1;
 
 // We re-export this under more proper name (it's not per-channel encryptor,
 // it is per-connection transport-level encryptor)
